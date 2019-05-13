@@ -7,6 +7,18 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareersComponent } from './careers/careers.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
+import { ManageCookiesComponent } from './manage-cookies/manage-cookies.component';
+
+//Importing font-awesome for icons
+import { AngularFontAwesomeModule } from "node_modules/angular-font-awesome";
+
+//For incorporating bootstrap into application
+import { AppBootstrapModule } from "./app.bootstrap.module";
+
+import { LocationStrategy, HashLocationStrategy } from "@angular/common";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { Router } from './app.routing';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +26,22 @@ import { ServicesComponent } from './services/services.component';
     ContactUsComponent,
     CareersComponent,
     AboutUsComponent,
-    ServicesComponent
+    ServicesComponent,
+    ManageCookiesComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppBootstrapModule,
+    Router
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
