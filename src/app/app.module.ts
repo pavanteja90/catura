@@ -19,6 +19,12 @@ import { LocationStrategy, HashLocationStrategy } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { Router } from './app.routing';
 import { BlogComponent } from './blog/blog.component';
+import { BlockchainConsultingComponent } from './blockchain-consulting/blockchain-consulting.component';
+import { CryptocurrencyWalletComponent } from './cryptocurrency-wallet/cryptocurrency-wallet.component';
+import { IcoDevelopmentComponent } from './ico-development/ico-development.component';
+import { ProofOfConceptComponent } from './proof-of-concept/proof-of-concept.component';
+import { SmartContractDevelopmentComponent } from './smart-contract-development/smart-contract-development.component';
+import { SecurityTokenOfferingComponent } from './security-token-offering/security-token-offering.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,13 @@ import { BlogComponent } from './blog/blog.component';
     AboutUsComponent,
     ServicesComponent,
     ManageCookiesComponent,
-    BlogComponent
+    BlogComponent,
+    BlockchainConsultingComponent,
+    CryptocurrencyWalletComponent,
+    IcoDevelopmentComponent,
+    ProofOfConceptComponent,
+    SmartContractDevelopmentComponent,
+    SecurityTokenOfferingComponent
   ],
   imports: [
     BrowserModule,

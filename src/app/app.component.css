@@ -1,44 +1,69 @@
-/* .navigation {
-  width: 100%;
-  height: 10%;
-  background: #222;
-  position: fixed;
-  color: #ddd;
+#navigation-bar {
+  background: #0C252E !important;
+  background-color: #0C252E !important;
+}
+#navigation ul li{
+  position: relative;
 }
 
-.navigation ul{
-  list-style-type: none;
+#navigation ul li a {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 600;
+}
+
+#navigation ul>li>a:hover{
+  color: #ddd ;
+}
+
+.dropdown-divider{
   margin: 0;
+}
+
+.dropdown-menu{
   padding: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  overflow: hidden;
 }
 
-.navigation ul li{
-  float: left;
+.dropdown-menu a{
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-.navigation ul li a {
+.dropdown-menu a:hover {
+  color: #ddd;
+  background-color: #0C252E;
+  transition: all ease-in-out 350ms;
+}
+
+#navigation ul>li>a::before{
+  content: '';
   display: block;
+  height: 2px;
+  background-color: #eee;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 350ms;
+}
+
+#navigation ul>li>a:hover::before{
+  width: 100%;
+}
+
+.nav-item{
+  display: inline-block;
+  margin-left: 0%;
   text-align: center;  
   text-decoration: none;
   color: #ddd;
-} */
-
-/* Change the link color to #111 (black) on hover */
-/* .navigation ul li a:hover {
-  
 }
 
-.company-logo{
-  width: 15% !important;
-} */
+.ellipsis {
+  text-overflow: ellipsis;
 
-
-
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 
 

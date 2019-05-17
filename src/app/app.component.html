@@ -1,12 +1,12 @@
 <section>
-  <div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-bottom: 0px;">
+  <div id="cookies-info" class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-bottom: 0px;">
     <div>
       We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies on our website. However, if you would like to, you can <strong>change your cookie settings</strong> at any time.    
       <div class="pull-right">
         <button style="margin: 0em 1em" type="button" class="btn btn-outline-success btn-sm" data-dismiss="alert" aria-label="Continue">
           <span aria-hidden="true">Continue</span>
         </button>
-        <input style="margin: 0em 1 em;" type="button" class="btn btn-outline-secondary btn-sm" (click)="navigate(5)" aria-label="More Info" value="More Info">
+        <input style="margin: 0em 1 em;" type="button" class="btn btn-outline-secondary btn-sm" (click)="navigate(6)" aria-label="More Info" value="More Info">
           <!-- <span aria-hidden="true"></span> -->
       </div>
     </div>
@@ -15,10 +15,10 @@
 </section>
 <section>
   <div id="navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+    <nav id="navigation-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" style="cursor: pointer; color: ivory" (click)="navigate(1)">
         <img src="../assets/images/bootstrap.png" style="height: 1.5em; width: 1.5em;align-self: center" alt="Logo">
-        <span class="sr-only">Outbak</span>Outbak
+        <span class="sr-only">Catura</span>Catura
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,17 +31,17 @@
               Services <span class="sr-only">Services</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Blockchain Consulting <span class="sr-only">Blockchain Consulting</span></a>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="navigate(1,1)">Blockchain Consulting <span class="sr-only">Blockchain Consulting</span></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Cryptocurrency Wallet <span class="sr-only">Cryptocurrency Wallet</span></a>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="navigate(1,2)">Cryptocurrency Wallet <span class="sr-only">Cryptocurrency Wallet</span></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">ICO Development <span class="sr-only">ICO Development</span></a>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="navigate(1,3)">ICO Development <span class="sr-only">ICO Development</span></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Proof of Concept Blockchain Application <span class="sr-only">Proof of Concept Blockchain Application</span></a>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="navigate(1,4)">Proof of Concept<span class="sr-only">Proof of Concept</span></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Smart Contract Development <span class="sr-only">Smart Contract Development</span></a>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="navigate(1,5)">Smart Contract Development <span class="sr-only">Smart Contract Development</span></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Security Token Offering <span class="sr-only">Security Token Offering</span></a>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="navigate(1,6)">Security Token Offering <span class="sr-only">Security Token Offering</span></a>
             </div>
           </li>
           <li class="nav-item">
@@ -51,7 +51,10 @@
             <a class="nav-link" style="cursor: pointer;" (click)="navigate(3)"><span class="sr-only">Careers</span>Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="cursor: pointer;" (click)="navigate(4)"><span class="sr-only">Contact Us</span>Contact Us</a>
+            <a class="nav-link" style="cursor: pointer;" (click)="navigate(4)"><span class="sr-only">Team</span>Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer;" (click)="navigate(5)"><span class="sr-only">Contact</span>Contact</a>
           </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">

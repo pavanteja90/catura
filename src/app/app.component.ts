@@ -17,16 +17,43 @@ export class AppComponent {
   }
   
   ngOnInit(){
-    $("#navigation .navbar-nav a").click(()=> {
-      $("#navigation .navbar-nav").find("li .active").removeClass("active");
-      $(this).parent("li").addClass("active");
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
   }
 
-  navigate(id){
+  navigate(id, id2?){
     switch(id){
       case 1:
-        this.router.navigate(["/services"]);
+        switch(id2){
+          case 1:
+            this.router.navigate(['/services/blockchain-consulting']);
+            break;
+          case 2:
+            this.router.navigate(["/services/cryptocurrency-wallet"]);  
+            break;
+          case 3:
+            this.router.navigate(["/services/ico-development"]);
+            break;
+          case 4:
+            this.router.navigate(["/services/proof-of-concept"]);  
+            break;
+          case 5:
+            this.router.navigate(["/services/smart-contract"]);
+            break;
+          case 6:
+            this.router.navigate(["/services/secrity-token"]);
+            break;
+          default:
+            this.router.navigate(["/services"]);
+            break;
+        }
         break
       case 2:
         this.router.navigate(["/blog"]);
@@ -35,9 +62,12 @@ export class AppComponent {
         this.router.navigate(["/careers"]);
         break;
       case 4:
-        this.router.navigate(["/contact"]);
+        this.router.navigate(["/team"]);
         break;
       case 5:
+        this.router.navigate(["/contact"]);
+        break;
+      case 6:
         this.router.navigate(["/managecookies"]);
         break;
     }
