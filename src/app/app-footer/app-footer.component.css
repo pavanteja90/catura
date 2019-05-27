@@ -1,0 +1,67 @@
+/*Footer*/
+.text-center {
+    text-align: center;
+}
+
+.inline-display {
+    display: inline-block;
+}
+
+.section-5{
+    background-color: #0C252E;
+    width: 100vw;
+    height: auto;
+    color: aliceblue;
+    padding: 5vh 5vw;
+}
+
+.section-5 h5{
+    position: absolute;
+}
+
+#services-h5::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: red;
+    height: 3px;
+    position: relative;
+}
+
+.services-list{
+    text-align: left;
+    padding-left: 20px;
+    list-style-type: none;
+    position: relative;
+    font-size: medium;
+    font-weight: 350;
+}
+
+.services-list>li{
+    padding: 2px;
+}
+
+.services-list>li>a:hover{
+    color: red;
+    transition: all ease-in-out 350ms;
+}
+
+.others-list a:hover{
+    color: red;
+    cursor: pointer;
+    transition: all ease-in-out 350ms;
+}
+
+.services-list > li > a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1vh;
+}
+
+.footer{
+    margin: 2vh 5vw;
+}
+
+.fa-animate>a>i:hover{
+    transform: scale(1.2);
+}
