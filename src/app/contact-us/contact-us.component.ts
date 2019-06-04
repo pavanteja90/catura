@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from "@angular/forms";
 import { ContactForm } from "../models/contact-form";
+import { ConnectionService } from "../connection.service";
 declare var $:any;
 
 @Component({
@@ -11,7 +12,7 @@ declare var $:any;
 export class ContactUsComponent implements OnInit {
   
   submissionForm: ContactForm;
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
 
   }
   
@@ -50,6 +51,12 @@ export class ContactUsComponent implements OnInit {
       'message': this.contactForm.controls['message'].value
     });
     console.log(this.submissionForm);
+    this.connectionService.sendMessage(this.contactForm.value).subscribe(() => {
+      alert('Your message has been sent.');
+      this.contactForm.reset();
+    }, error => {
+      console.log('Error', error);
+    });
   }
 
 }

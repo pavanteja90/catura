@@ -16,6 +16,7 @@ import { AngularFontAwesomeModule } from "node_modules/angular-font-awesome";
 import { AppBootstrapModule } from "./app.bootstrap.module";
 
 import { LocationStrategy, HashLocationStrategy } from "@angular/common";
+import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { Router } from './app.routing';
 import { BlogComponent } from './blog/blog.component';
@@ -49,9 +50,11 @@ import { SecurityTokenOfferingComponent } from './security-token-offering/securi
     FormsModule,
     ReactiveFormsModule,
     AppBootstrapModule,
+    HttpClientModule,
     Router
   ],
   providers: [
+    HttpClient,
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
