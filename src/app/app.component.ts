@@ -28,7 +28,7 @@ export class AppComponent {
         });
     }
 
-    navigate(id, id2?) {
+    navigate(id:number, id2?:number) {
         switch (id) {
             case 1:
                 switch (id2) {

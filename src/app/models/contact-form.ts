@@ -8,7 +8,7 @@ export class ContactForm {
     reasonForContact: string = '';
     message: string = '';
 
-    map(data){
+    map(data: any){
         this.name = data.name;
         this.email = data.email;
         this.contact = data.contact;

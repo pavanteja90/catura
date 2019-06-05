@@ -13,5 +13,7 @@ export class ServicesComponent implements OnInit {
   ngOnInit() {
   }
 
-  
+  contactUs(){
+    this.router.navigate(['/contact']);
+  }
 }

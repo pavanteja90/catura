@@ -2,3 +2,7 @@
     content: ' *';
     color: red;
 }
+
+.padded{
+    border: 1.5em solid #ddd;
+}

@@ -25,7 +25,7 @@ export class ContactUsComponent implements OnInit {
   });
 
   ngOnInit() {
-    $(".numbersOnly").keydown(function (event) {
+    $(".numbersOnly").keydown(function (event: any) {
       var num = event.keyCode;
       if ((num > 95 && num < 106) || (num > 36 && num < 41) || num == 9) {
           return;

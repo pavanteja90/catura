@@ -16,6 +16,14 @@
   color: #ddd ;
 }
 
+.divider{
+  font-size: 0.8em;
+  background-color: #ddd;
+  color: #777;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
 .dropdown-divider{
   margin: 0;
 }

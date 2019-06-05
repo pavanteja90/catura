@@ -12,7 +12,7 @@ export class AppFooterComponent implements OnInit {
 
     ngOnInit() {
     }
-    navigate(id) {
+    navigate(id:number) {
         switch (id) {
             case 1:
                 this.router.navigate(['/services/blockchain-consulting']);
