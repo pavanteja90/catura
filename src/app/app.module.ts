@@ -26,6 +26,9 @@ import { IcoDevelopmentComponent } from './ico-development/ico-development.compo
 import { ProofOfConceptComponent } from './proof-of-concept/proof-of-concept.component';
 import { SmartContractDevelopmentComponent } from './smart-contract-development/smart-contract-development.component';
 import { SecurityTokenOfferingComponent } from './security-token-offering/security-token-offering.component';
+import { AppFooterComponent } from './app-footer/app-footer.component';
+import { InternetOfThingsComponent } from './internet-of-things/internet-of-things.component';
+import { ArtificialIntelligenceComponent } from './artificial-intelligence/artificial-intelligence.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { SecurityTokenOfferingComponent } from './security-token-offering/securi
     IcoDevelopmentComponent,
     ProofOfConceptComponent,
     SmartContractDevelopmentComponent,
-    SecurityTokenOfferingComponent
+    SecurityTokenOfferingComponent,
+    AppFooterComponent,
+    InternetOfThingsComponent,
+    ArtificialIntelligenceComponent
   ],
   imports: [
     BrowserModule,
