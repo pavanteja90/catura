@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from "@angular/forms";
 import { ContactForm } from "../models/contact-form";
-import { ConnectionService } from "../connection.service";
+import { ConnectionService } from "../services-list/connection.service";
+import { Router, NavigationEnd } from '@angular/router';
+import { GoogleAnalyticsService } from '../services-list/google-analytics-service.service';
 declare var $:any;
+declare var ga: any;
 
 @Component({
   selector: 'app-contact-us',
@@ -12,8 +15,13 @@ declare var $:any;
 export class ContactUsComponent implements OnInit {
   
   submissionForm: ContactForm;
-  constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
-
+  constructor(private fb: FormBuilder, private connectionService: ConnectionService, private router: Router, private googleAnalytics: GoogleAnalyticsService) {
+    this.router.events.subscribe(event => {
+      if(event instanceof NavigationEnd){
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    })
   }
   
   contactForm = new FormGroup({
@@ -25,6 +33,7 @@ export class ContactUsComponent implements OnInit {
   });
 
   ngOnInit() {
+    this.googleAnalytics.emitEvent('PageView', 'ContactUs');
     $(".numbersOnly").keydown(function (event: any) {
       var num = event.keyCode;
       if ((num > 95 && num < 106) || (num > 36 && num < 41) || num == 9) {

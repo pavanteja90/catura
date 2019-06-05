@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { GoogleAnalyticsService } from '../services-list/google-analytics-service.service';
+declare var ga: any;
 
 @Component({
   selector: 'app-services',
@@ -8,9 +10,17 @@ import { Router } from '@angular/router';
 })
 export class ServicesComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private googleAnalytics: GoogleAnalyticsService) { 
+    this.router.events.subscribe(event => {
+      if(event instanceof NavigationEnd){
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    })
+  }
 
   ngOnInit() {
+    this.googleAnalytics.emitEvent('PageView', 'Services');
   }
 
   contactUs(){

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router, NavigationEnd } from "@angular/router";
+import { GoogleAnalyticsService } from "./services-list/google-analytics-service.service";
 declare var $: any;
+declare var ga: any;
 
 @Component({
     selector: 'app-root',
@@ -10,10 +12,16 @@ declare var $: any;
 export class AppComponent {
     // title = 'outbak-ventures-blockchain-app';
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private googleAnalyticsService: GoogleAnalyticsService) {
         // this.router.events.subscribe((ev)=> {
 
         // })
+        this.router.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+              ga('set', 'page', event.urlAfterRedirects);
+              ga('send', 'pageview');
+            }
+        });
     }
 
     ngOnInit() {
@@ -26,6 +34,7 @@ export class AppComponent {
         $('.dropdown').on('hide.bs.dropdown', function () {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
         });
+        this.googleAnalyticsService.emitEvent('PageView', 'Homepage');
     }
 
     navigate(id:number, id2?:number) {
