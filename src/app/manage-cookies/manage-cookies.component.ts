@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from '../services-list/google-analytics-service.service';
 declare var ga: any;
+declare var $: any;
 
 @Component({
   selector: 'app-manage-cookies',
@@ -21,6 +22,6 @@ export class ManageCookiesComponent implements OnInit {
 
   ngOnInit() {
     this.googleAnalytics.emitEvent('PageView', 'ManageCookies');
-  }
+    }
 
 }
