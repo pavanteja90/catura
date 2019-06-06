@@ -3,7 +3,6 @@
     animation-duration: 1000ms;
     background-image: url('../../assets/images/blockchain.jpeg');
     width: 100vw;
-    height: 80vh;
     background-position: center;
     color: ivory;
     display: table;
@@ -57,6 +56,10 @@
 
 /*CSS for section 1*/
 
+.outbak-topMain{
+    margin-top:58px;
+    padding-top:2px;
+}
 .heading-div {
     display: table-cell;
     vertical-align: middle;
@@ -128,6 +131,8 @@
     left: 0;
     margin: auto;
     width: 34px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     height: 55px;
 }
 
