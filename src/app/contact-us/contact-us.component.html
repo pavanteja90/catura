@@ -1,10 +1,9 @@
-<div class="container container-fluid">
-  <br>
-  <h3>
-    Contact:
-  </h3>
-  <br>
-  <!-- <section>
+<section class="contact-section">
+    <div class="container container-fluid padding-top padding-bottom">
+        <h1 class="centered padding-bottom">
+            Contact
+        </h1>
+        <!-- <section>
     <form [formGroup]="contactForm" (ngSubmit)="submitContact()" autocomplete="off">
       <div class="row">
         <div class="col form-group required">
@@ -46,25 +45,24 @@
     </form>
     <br><br>
   </section> -->
-  <section>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="padded">
-          <iframe
-            width="100%"
-            height="600px"
-            frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAA_LPNUVDQ63LXACQev6_ikT7qdAZHIyw&q=Outbak+Ventures,Brisbane+QLD" allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h5>Address:</h5>
-        <p>
-          Suite 4QD, Level 4, 199 George Street, Brisbane, Queensland 4000.
-        </p>
-      </div>
+        <section>
+            <div class="row">
+                <div class="col-md-7 padding-top padding-left padding-right">
+                    <div class="padded">
+                        <iframe class="map-frame" frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAA_LPNUVDQ63LXACQev6_ikT7qdAZHIyw&q=Outbak+Ventures,Brisbane+QLD"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-5 padding-top padding-left padding-right">
+                    <h5>Address:</h5>
+                    <p>
+                        Suite 4QD, Level 4, 199 George Street, Brisbane, Queensland 4000.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+        </section>
     </div>
-    <br><br>
-  </section>
-</div>
+</section>

@@ -1,8 +1,39 @@
+.contact-section {
+    margin-top: 55px;
+    padding-top: 2px;
+}
+
+.padding-top {
+    padding-top: 5vh;
+}
+
+.padding-bottom {
+    padding-bottom: 5vh;
+}
+
+.centered {
+    text-align: center;
+}
+
 .form-group.required label::after{
     content: ' *';
     color: red;
 }
 
 .padded{
+    width: 100%;
     border: 1.5em solid #ddd;
+}
+
+.map-frame {
+    width: 100%;
+    height: 80vh;
+}
+
+.padding-left {
+    padding-left: 3%;
+}
+
+.padding-right {
+    padding-right: 3%;
 }
