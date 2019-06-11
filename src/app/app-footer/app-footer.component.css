@@ -14,7 +14,12 @@
     color: aliceblue;
     padding: 5vh 5vw;
 }
-
+.services-list a.clicked{
+    color: red !important;
+  }
+  .footer-second a.clicked {
+    color: red !important;
+  }
 .section-5 h5{
     position: absolute;
 }

@@ -68,6 +68,19 @@
   color: #ddd;
 }
 
+.normal-nav-item.clicked a{ 
+  color:white !important;
+}
+.dropdown-menu .clicked{
+  color: #ddd !important;
+  background-color: #223841 !important;  
+}
+.services-list a.clicked{
+  color: red !important;
+}
+.footer-second a.clicked {
+  color: red !important;
+}
 .ellipsis {
   text-overflow: ellipsis;
 
