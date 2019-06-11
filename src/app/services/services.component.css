@@ -74,15 +74,15 @@
 /*CSS for section 1*/
 
 .outbak-topMain{
-    margin-top:55px;
-    padding-top:2px;
+    padding-top:10px;
 }
 .heading-div {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     text-transform: uppercase;
-    padding: 0%;
+    padding: 38px 0 0 0;
+    
 }
 
 .heading-div>p:nth-child(1) {
