@@ -13,7 +13,7 @@
 .section-2 {
     animation-name: out;
     animation-duration: 1000ms;
-    background-color: ivory;
+    background-image: linear-gradient(to bottom right, #396B7F, #396B7F, #3c137c,#3e0c76);
     width: 100vw;
     height: 100vh;
     display: table;
@@ -22,7 +22,9 @@
 .section-3 {
     animation-name: out;
     animation-duration: 1000ms;
-    background-color: #DFDFDF;
+    background-image: url("../../assets/images/backgrounds/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     display: table;
 }
@@ -30,7 +32,7 @@
 .section-4 {
     animation-name: out;
     animation-duration: 1000ms;
-    background-color: ivory;
+    background-image: linear-gradient(to bottom left, #34298c, #0b6eb9, #45e3cd);
     width: 100vw;
     height: 100vh;
     display: table;
@@ -38,14 +40,20 @@
 
 .section-5 {
     animation-name: out;
-    animation-duration: 1000ms;
-    background-color: #DFDFDF;
+    animation-duration: 1000ms; 
+    background-image: url("../../assets/images/backgrounds/background1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     display: table;
 }
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.color-white {
+    color: white;
 }
 
 .text-center {
