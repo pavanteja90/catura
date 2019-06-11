@@ -14,6 +14,7 @@ import { SmartContractDevelopmentComponent } from "./smart-contract-development/
 import { SecurityTokenOfferingComponent } from "./security-token-offering/security-token-offering.component";
 import { ArtificialIntelligenceComponent } from "./artificial-intelligence/artificial-intelligence.component";
 import { InternetOfThingsComponent } from "./internet-of-things/internet-of-things.component";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes:Routes = [
     {
@@ -60,6 +61,12 @@ const routes:Routes = [
     },
     {
         path: 'team', component: AboutUsComponent
+    },
+    {
+        path: '404', component: PageNotFoundComponent
+    },
+    {
+        path: '**', redirectTo: '404'
     }
 ]
 

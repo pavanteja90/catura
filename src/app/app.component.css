@@ -1,6 +1,9 @@
 #navigation-bar {
   background: #0C252E !important;
   background-color: #0C252E !important;
+  position: fixed;
+  width: 100%;
+  top:0px;
 }
 #navigation ul li{
   position: relative;
@@ -39,7 +42,7 @@
 
 .dropdown-menu a:hover {
   color: #ddd;
-  background-color: #0C252E;
+  background-color: #223841;
   transition: all ease-in-out 350ms;
 }
 
@@ -303,6 +306,7 @@
       font-size:1.52em;
     }
   }
+
   
   @media screen and (max-width:320px){
     .no-csstransforms .cn-wrapper{
@@ -316,8 +320,13 @@
   }
 
 .outbak-topNav{
-  position: fixed;
+  position: relative;
   top:0px;
   z-index:100;
   width: 100%;
+}
+
+#cookies-info{
+  position: fixed;
+  bottom: 0px;
 }

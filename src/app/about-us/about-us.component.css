@@ -1,0 +1,48 @@
+.team-section {
+    margin-top: 55px;
+    padding-top: 2px;
+}
+
+.content-center {
+    text-align: center;
+}
+
+.padding-top {
+    padding-top: 5vh;
+}
+
+.padding-bottom {
+    padding-bottom: 5vh;
+}
+
+.page-header {
+    color: #4E6067;
+    text-transform: capitalize;
+    /* text-decoration-line: underline; */
+}
+
+.grayscale {    
+    color: #999;
+}
+
+.card-animate {
+    animation-name: out;
+    animation-duration: 1000ms;
+}
+
+.card-animate {
+    width: 90%;
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.0);
+    transition: all ease-in-out 350ms;
+}
+
+@keyframes out {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}

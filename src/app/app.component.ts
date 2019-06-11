@@ -35,7 +35,7 @@ export class AppComponent {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
         });
         this.googleAnalyticsService.emitEvent('PageView', 'Homepage');
-
+        /*
         $(document).ready(function(){
             var contentPlacement = $('.outbak-topNav').position().top + $('.outbak-topNav').height();
             console.log("Checking the contentplacement : "+ contentPlacement );
@@ -51,6 +51,7 @@ export class AppComponent {
             console.log("Checking the contentplacement after click: "+ contentPlacement );
             $('#outbak-section').attr('style','');
         })
+        */
     }
 
     navigate(id:number, id2?:number) {
