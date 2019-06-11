@@ -13,7 +13,7 @@
 .section-2 {
     animation-name: out;
     animation-duration: 1000ms;
-    background-image: linear-gradient(to bottom right, #396B7F, #396B7F, #3c137c,#3e0c76);
+    background-image: linear-gradient(to bottom right, #396B7F, #396B7F, #396B7F, #3c137c,#3e0c76);
     width: 100vw;
     height: 100vh;
     display: table;
