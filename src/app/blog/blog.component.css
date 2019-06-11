@@ -27,4 +27,6 @@
     color: white;
 }
 
-
+.area { 
+    background: linear-gradient(to bottom right, #267794, #f0fbfb); 
+}

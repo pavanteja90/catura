@@ -31,9 +31,7 @@
     font-size: 50px;
 }
 
-.area{
-    background: #0B3674;  
-    background: linear-gradient(to left, #8f94fb, #4e54c8);  
+.area{ 
     width: 100%;
     min-height:40vh;
     position: relative;

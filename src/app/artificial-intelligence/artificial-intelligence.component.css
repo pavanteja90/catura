@@ -14,6 +14,10 @@
     padding-left: 5%;
 }
 
+.area { 
+    background: linear-gradient(to bottom right, #396B7F, #396B7F, #396B7F, #3c137c,#3e0c76); 
+}
+
 .padding-right {
     padding-right: 5%;
 }

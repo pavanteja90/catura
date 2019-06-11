@@ -35,6 +35,10 @@
     vertical-align: middle;
 }
 
+.area { 
+    background: linear-gradient(to bottom right, #396B7F, #396B7F, #396B7F, #3c137c,#3e0c76); 
+}
+
 .color-white {
     color: white;    
 }

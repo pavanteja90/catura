@@ -9,6 +9,10 @@
     background: linear-gradient(to bottom right, #267794, #f0fbfb);
 }
 
+.area { 
+    background: linear-gradient(to bottom right, #267794, #f0fbfb); 
+}
+
 .contact-header {
     display: table-cell;
     height: 100%;

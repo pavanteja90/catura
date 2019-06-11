@@ -29,6 +29,11 @@
     display: table;
 }
 
+.area { 
+    background: linear-gradient(to bottom right, #396B7F, #396B7F, #396B7F, #3c137c,#3e0c76); 
+}
+
+
 .header-content {
     height: 40vh;
     display: table-cell;
