@@ -1,0 +1,28 @@
+.blog-section {
+    margin-top: 55px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.blog-table {
+    display: table;
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #267794, #f0fbfb);
+}
+
+.blog-header {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.color-white {
+    color: white;
+}

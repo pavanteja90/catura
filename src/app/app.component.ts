@@ -52,6 +52,7 @@ export class AppComponent {
             $('#outbak-section').attr('style','');
         })
         */
+        console.log("Developed by Pavan Teja Bhatta <pavanteja.bhatta@gmail.com>");
     }
 
     navigate(id:number, id2?:number) {

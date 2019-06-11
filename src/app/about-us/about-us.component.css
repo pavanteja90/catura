@@ -1,6 +1,27 @@
 .team-section {
     margin-top: 55px;
-    padding-top: 2px;
+    background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%)
+}
+
+.team-table {
+    display: table;
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #267794, #f0fbfb);
+}
+
+.team-header {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.color-white {
+    color: white !important;
 }
 
 .content-center {
@@ -13,12 +34,6 @@
 
 .padding-bottom {
     padding-bottom: 5vh;
-}
-
-.page-header {
-    color: #4E6067;
-    text-transform: capitalize;
-    /* text-decoration-line: underline; */
 }
 
 .grayscale {    
