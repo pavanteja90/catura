@@ -1,0 +1,44 @@
+.poc-section {
+    margin-top: 55px;
+}
+
+.padding-top {
+    padding-top: 5%;
+}
+
+.padding-bottom {
+    padding-bottom: 5%;
+}
+
+.padding-left {
+    padding-left: 5%;
+}
+
+.padding-right {
+    padding-right: 5%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.poc-header {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #396B7F, #396B7F, #396B7F, #3c137c,#3e0c76);
+    display: table;
+}
+
+.header-content {
+    height: 40vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.color-white {
+    color: white;    
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
