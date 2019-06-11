@@ -29,6 +29,7 @@ import { SecurityTokenOfferingComponent } from './security-token-offering/securi
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { InternetOfThingsComponent } from './internet-of-things/internet-of-things.component';
 import { ArtificialIntelligenceComponent } from './artificial-intelligence/artificial-intelligence.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ArtificialIntelligenceComponent } from './artificial-intelligence/artif
     SecurityTokenOfferingComponent,
     AppFooterComponent,
     InternetOfThingsComponent,
-    ArtificialIntelligenceComponent
+    ArtificialIntelligenceComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
