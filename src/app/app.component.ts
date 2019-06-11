@@ -18,6 +18,51 @@ export class AppComponent {
         // })
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
+                console.log('correct route');
+                var urlVal =event.urlAfterRedirects;
+                var changedValues = [""]; //Given this value to remove the red squiggly
+                $('.dropdown-item').each(function(){
+                    if($(this).hasClass('clicked')){
+                        $(this).removeClass('clicked');
+                    }
+                    var currentAttrVal = $(this).attr('router-url');
+                    if(currentAttrVal == urlVal){
+                        changedValues.push($(this));
+                    }
+                });
+                $('.footer-second a').each(function(){
+                    if($(this).hasClass('clicked')){
+                        $(this).removeClass('clicked');
+                    }
+                    var currentAttrVal = $(this).attr('router-url');
+                    if(currentAttrVal == urlVal){
+                        changedValues.push($(this));
+                    }
+                });
+                $('.services-list a').each(function(){
+                    if($(this).hasClass('clicked')){
+                        $(this).removeClass('clicked');
+                    }
+                    var currentAttrVal = $(this).attr('router-url');
+                    if(currentAttrVal == urlVal){
+                        changedValues.push($(this));
+                    }
+                });
+                $('.normal-nav-item').each(function(){
+                    if($(this).hasClass('clicked')){
+                        $(this).removeClass('clicked');
+                    }
+                    var currentAttrVal = $(this).attr('router-url');
+                    if(currentAttrVal == urlVal){
+                        changedValues.push($(this));
+                    }
+                });
+                for(var count = 0; count < changedValues.length; count++) {
+                    if(changedValues[count] != ""){
+                        $(changedValues[count]).addClass("clicked");
+                    }
+                }
+                console.log('clearning done');
               ga('set', 'page', event.urlAfterRedirects);
               ga('send', 'pageview');
             }
@@ -35,6 +80,10 @@ export class AppComponent {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
         });
         this.googleAnalyticsService.emitEvent('PageView', 'Homepage');
+        $(document).ready(function(){
+            console.log('Document is ready');
+        });
+        
         /*
         $(document).ready(function(){
             var contentPlacement = $('.outbak-topNav').position().top + $('.outbak-topNav').height();
