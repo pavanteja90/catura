@@ -70,4 +70,4 @@ const routes:Routes = [
     }
 ]
 
-export const Router = RouterModule.forRoot(routes);
+export const Router = RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' });
