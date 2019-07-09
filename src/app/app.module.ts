@@ -30,6 +30,9 @@ import { AppFooterComponent } from './app-footer/app-footer.component';
 import { InternetOfThingsComponent } from './internet-of-things/internet-of-things.component';
 import { ArtificialIntelligenceComponent } from './artificial-intelligence/artificial-intelligence.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { LogoAnimationComponent } from './logo-animation/logo-animation.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppFooterComponent,
     InternetOfThingsComponent,
     ArtificialIntelligenceComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NavigationBarComponent,
+    LogoAnimationComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

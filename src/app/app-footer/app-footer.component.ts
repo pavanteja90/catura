@@ -47,6 +47,9 @@ export class AppFooterComponent implements OnInit {
             case 9:
                 this.router.navigate(["/team"]);
                 break;
+            case 12:
+                this.router.navigate(["/services"]);
+                break;
             default:
                 this.router.navigate(["/services"]);
                 break;

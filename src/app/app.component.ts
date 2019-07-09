@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from "@angular/router";
 import { GoogleAnalyticsService } from "./services-list/google-analytics-service.service";
+import { Meta, Title } from '@angular/platform-browser';
 declare var $: any;
 declare var ga: any;
 
@@ -13,12 +14,13 @@ export class AppComponent {
     // title = 'outbak-ventures-blockchain-app';
 
     constructor(private router: Router, private googleAnalyticsService: GoogleAnalyticsService) {
-        // this.router.events.subscribe((ev)=> {
-
-        // })
+        // , private meta: Meta, private title: Title
+        // this.meta.updateTag({ name: 'keywords', content: '' });
+        // this.meta.updateTag({ name: 'author', content: 'catura' });
+        // this.meta.updateTag({ name: 'description', content: ''});
+        // this.title.setTitle('Services | Catura');
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
-                console.log('correct route');
                 var urlVal = event.urlAfterRedirects;
                 var changedValues = [""]; //Given this value to remove the red squiggly
                 $('.dropdown-item').each(function () {
@@ -62,7 +64,6 @@ export class AppComponent {
                         $(changedValues[count]).addClass("clicked");
                     }
                 }
-                console.log('clearning done');
                 ga('set', 'page', event.urlAfterRedirects);
                 ga('send', 'pageview');
             }
@@ -80,31 +81,15 @@ export class AppComponent {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
         });
         this.googleAnalyticsService.emitEvent('PageView', 'Homepage');
-        $(document).ready(function () {
-            console.log('Document is ready');
-        });
-
-        /*
-        $(document).ready(function(){
-            var contentPlacement = $('.outbak-topNav').position().top + $('.outbak-topNav').height();
-            console.log("Checking the contentplacement : "+ contentPlacement );
-            $('#outbak-section').css('margin-top',contentPlacement);
-        });
-        $(window).resize(function(){
-            var contentPlacement = $('.outbak-topNav').position().top + $('.outbak-topNav').height();
-            console.log("Checking the contentplacement : "+ contentPlacement );
-            $('#outbak-section').css('margin-top',contentPlacement);
-        });
-        $("#outback-topCookies").click(function(){
-            var contentPlacement = $('.outbak-topNav').position().top + $('.outbak-topNav').height();
-            console.log("Checking the contentplacement after click: "+ contentPlacement );
-            $('#outbak-section').attr('style','');
-        })
-        */
         console.log("Developed by Pavan Teja Bhatta <pavanteja.bhatta@gmail.com>");
     }
 
-    navigate(id: number, id2?: number) {
+    navigate(navCode: Array<number>) {
+        let id = navCode[0];
+        let id2 = 0;
+        if(navCode.length > 1){
+            id2 = navCode[1];
+        }
         switch (id) {
             case 1:
                 switch (id2) {
@@ -133,7 +118,7 @@ export class AppComponent {
                         this.router.navigate(["/services/artificial-intelligence"]);
                         break;
                     default:
-                        this.router.navigate(["/services"]);
+                        this.router.navigate(["/"]);
                         break;
                 }
                 break;
@@ -152,6 +137,26 @@ export class AppComponent {
             case 6:
                 this.router.navigate(["/managecookies"]);
                 break;
+        }
+    }
+
+    navButtonClicked() {
+        if ($("#navButton").hasClass("btn-initial")) {
+            $("#navButton").removeClass("btn-initial");
+            $("#navButton").addClass("btn-outline-danger");
+        }
+        else {
+            $("#navButton").removeClass("btn-outline-danger");
+            $("#navButton").addClass("btn-initial");
+        }
+
+        if ($("#navButtonIcon").hasClass("fa-bars")) {
+            $("#navButtonIcon").removeClass("fa-bars");
+            $("#navButtonIcon").addClass("fa-times");
+        }
+        else {
+            $("#navButtonIcon").removeClass("fa-times");
+            $("#navButtonIcon").addClass("fa-bars");
         }
     }
 

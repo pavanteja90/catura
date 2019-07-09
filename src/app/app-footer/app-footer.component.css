@@ -1,4 +1,5 @@
 /*Footer*/
+
 .text-center {
     text-align: center;
 }
@@ -7,24 +8,39 @@
     display: inline-block;
 }
 
-.section-5{
+.section-5 {
     background-color: #0C252E;
     width: 100vw;
     height: auto;
     color: aliceblue;
     padding: 5vh 5vw;
 }
-.services-list a.clicked{
-    color: red !important;
-  }
-  .footer-second a.clicked {
-    color: red !important;
-  }
-.section-5 h5{
+
+.services-list a.clicked {
+    font-weight: bold !important;
+    background: -webkit-linear-gradient(red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-second a.clicked {
+    font-weight: bolder;
+    background: -webkit-linear-gradient(red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.catura-mail:hover {
+    background: -webkit-linear-gradient(red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-5 h5 {
     position: absolute;
 }
 
-#services-h5::after{
+#services-h5::after {
     content: '';
     display: block;
     width: 100%;
@@ -33,7 +49,7 @@
     position: relative;
 }
 
-.services-list{
+.services-list {
     text-align: left;
     padding-left: 20px;
     list-style-type: none;
@@ -42,28 +58,40 @@
     font-weight: 350;
 }
 
-.services-list>li{
+.services-list>li {
     padding: 2px;
 }
 
-.services-list>li>a:hover{
-    color: red;
-    transition: all ease-in-out 350ms;
+.services-list>li>a {
+    font-weight: 400;
+    display: inline-block;
+    padding: 0 !important;
+    transform: translateX(0);
+    transition: all ease-in-out 200ms;
 }
 
-.others-list a:hover{
-    color: red;
+.services-list>li>a:hover {
+    background: -webkit-linear-gradient(red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX(5px);
+    transition: all ease-in-out 200ms;
+}
+
+.others-list a:hover {
+    background: -webkit-linear-gradient(red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
-    transition: all ease-in-out 350ms;
 }
 
-.services-list > li > a{
+.services-list>li>a {
     text-decoration: none;
     cursor: pointer;
     padding: 1vh;
 }
 
-.footer{
+.footer {
     margin: 2vh 5vw;
 }
 

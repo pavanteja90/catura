@@ -12,104 +12,14 @@
                         <span aria-hidden="true">Continue</span>
                     </button>
                     <input style="margin: 0em 1 em;" type="button" class="btn btn-outline-secondary btn-sm"
-                        (click)="navigate(6)" aria-label="More Info" value="More Info">
+                        (click)="navigate([6])" aria-label="More Info" value="More Info">
                     <!-- <span aria-hidden="true"></span> -->
                 </div>
             </div>
             <br>
         </div>
     </section>
-    <section>
-        <div id="navigation">
-            <nav id="navigation-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" style="cursor: pointer; color: ivory" (click)="navigate(1)">
-                    <!-- <img src="../assets/images/bootstrap.png" style="height: 1.5em; width: 1.5em;align-self: center" alt="Logo"> -->
-                    <span class="sr-only">Catura</span>
-                    <img src="../assets/images/catura.png" style="height: 1em; align-self: center" alt="Catura">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Services <span class="sr-only">Services</span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a router-url="/services/blockchain-consulting" class="dropdown-item"
-                                    style="cursor: pointer;" (click)="navigate(1,1)">Blockchain
-                                    Consulting <span class="sr-only">Blockchain Consulting</span></a>
-                                <div class="dropdown-divider"></div>
-                                <a router-url="/services/cryptocurrency-wallet" class="dropdown-item"
-                                    style="cursor: pointer;" (click)="navigate(1,2)">Cryptocurrency
-                                    Wallet <span class="sr-only">Cryptocurrency Wallet</span></a>
-                                <div class="dropdown-divider"></div>
-                                <a router-url="/services/ico-development" class="dropdown-item" style="cursor: pointer;"
-                                    (click)="navigate(1,3)">ICO Development
-                                    <span class="sr-only">ICO Development</span></a>
-                                <div class="dropdown-divider"></div>
-                                <a router-url="/services/proof-of-concept" class="dropdown-item"
-                                    style="cursor: pointer;" (click)="navigate(1,4)">Proof of
-                                    Concept<span class="sr-only">Proof of Concept</span></a>
-                                <div class="dropdown-divider"></div>
-                                <a router-url="/services/smart-contract" class="dropdown-item" style="cursor: pointer;"
-                                    (click)="navigate(1,5)">Smart Contract
-                                    Development <span class="sr-only">Smart Contract Development</span></a>
-                                <div class="dropdown-divider"></div>
-                                <a router-url="/services/secrity-token" class="dropdown-item" style="cursor: pointer;"
-                                    (click)="navigate(1,6)">Security Token
-                                    Offering <span class="sr-only">Security Token Offering</span></a>
-                                <div class="dropdown-divider"></div>
-                                <span class="dropdown-item divider">Other Services</span>
-                                <div class="dropdown-divider"></div>
-                                <a router-url="/services/internet-of-things" class="dropdown-item"
-                                    style="cursor: pointer;" (click)="navigate(1,7)">Internet of Things
-                                    <span class="sr-only">Internet of Things</span></a>
-                                <div class="dropdown-divider"></div>
-                                <a router-url="/services/artificial-intelligence" class="dropdown-item"
-                                    style="cursor: pointer;" (click)="navigate(1,8)">Artificial Intelligence
-                                    <span class="sr-only">Artificial Intelligence</span></a>
-                            </div>
-                        </li>
-                        <li class="nav-item normal-nav-item" router-url="/blog">
-                            <a class="nav-link" style="cursor: pointer;" (click)="navigate(2)"><span
-                                    class="sr-only">Blog</span>Blog</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                        <a class="nav-link" style="cursor: pointer;" (click)="navigate(3)"><span
-                                class="sr-only">Careers</span>Careers</a>
-                    </li> -->
-                        <li class="nav-item normal-nav-item" router-url="/team">
-                            <a class="nav-link" style="cursor: pointer;" (click)="navigate(4)"><span
-                                    class="sr-only">Team</span>Team</a>
-                        </li>
-                        <li class="nav-item normal-nav-item" router-url="/contact">
-                            <a class="nav-link" style="cursor: pointer;" (click)="navigate(5)"><span
-                                    class="sr-only">Contact</span>Contact</a>
-                        </li>
-                    </ul>
-                    <div class="fa-animate" style="text-align: center">
-                        <a href="https://www.facebook.com/Catura-670185576738291/" target="_blank">
-                            <i class="fa fa-facebook" style="color: #3b5998" title="Facebook"></i>
-                        </a>
-                        &nbsp;&nbsp;
-                        <a href="https://www.instagram.com/blockchaincatura/" target="_blank">
-                            <i class="fa fa-instagram" style="color: #c13584" title="Instagram"></i>
-                        </a>
-                        &nbsp;&nbsp;
-                        <a href="https://www.linkedin.com/company/catura/about/" target="_blank">
-                            <i class="fa fa-linkedin" style="color: #0e76a8;" title="LinkedIn"></i>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
+    <app-navigation-bar (navButtonClick)="navButtonClicked()" (navigation)="navigate($event)"></app-navigation-bar>
 </section>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

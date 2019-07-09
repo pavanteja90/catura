@@ -1,8 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
-@import '~font-awesome/css/font-awesome.min.css';
-@import './assets/fullpage.css';
-
 
 .heading-outer{
         height: 40vh;
@@ -150,4 +146,208 @@
         border-radius: 50%;
     }
 
+}
+
+
+.padding-top {
+    padding-top: 5vh;
+}
+
+.padding-bottom {
+    padding-bottom: 5vh;
+}
+
+.padding-left {
+    padding-left: 5vw;
+}
+
+.padding-right {
+    padding-right: 5vw;
+}
+
+.margin-top {
+    margin-top: 5vh;
+}
+
+.margin-bottom {
+    margin-bottom: 5vh;
+}
+
+.margin-left {
+    margin-left: 5vw;
+}
+
+.margin-right {
+    margin-right: 5vw;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-right {
+    margin-right: 0 !important;
+}
+
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.padding {
+    padding: 5vh 5vw;
+}
+
+.margin {
+    margin: 5vh 5vw;
+}
+
+.padding-top-5 {
+    padding-top: 5%;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5%;
+}
+
+.padding-left-5 {
+    padding-left: 5% !important;
+}
+
+.padding-right-5 {
+    padding-right: 5% !important;
+}
+
+.padding-5 {
+    padding: 5%;
+}
+
+.margin-top-5 {
+    margin-top: 5%;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+
+.margin-left-5 {
+    margin-left: 5%;
+}
+
+.margin-right-5 {
+    margin-right: 5%;
+}
+
+.margin-5 {
+    margin: 5%;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.centered {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.table {
+    display: table;
+    height: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: red;
+}
+
+.page-heading {
+    display: inline-block;
+    color: #444;
+}
+
+.page-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: red;
+    height: 3px;
+    position: relative;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.left-aligned{
+    text-align: left;
+}
+
+.font-lg {
+    font-size: 1.25em;
+}
+
+.img-contain {
+    width: 100%;
+}
+
+.img-contain-1 {
+    width: 80%;
+}
+
+.img-contain-2 {
+    width: 50%
+}
+
+.img-contain-3 {
+    max-height: 50px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.pointer {
+    cursor: pointer;
 }

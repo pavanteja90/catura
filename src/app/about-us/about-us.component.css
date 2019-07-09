@@ -57,6 +57,11 @@
     transition: all ease-in-out 350ms;
 }
 
+.small-text {
+    font-size: 0.66em;
+    color: #999;
+}
+
 @keyframes out {
     from {
         transform: scale(1.05);

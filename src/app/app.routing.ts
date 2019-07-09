@@ -15,10 +15,11 @@ import { SecurityTokenOfferingComponent } from "./security-token-offering/securi
 import { ArtificialIntelligenceComponent } from "./artificial-intelligence/artificial-intelligence.component";
 import { InternetOfThingsComponent } from "./internet-of-things/internet-of-things.component";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LogoAnimationComponent } from './logo-animation/logo-animation.component';
 
 const routes:Routes = [
     {
-        path: '', component: ServicesComponent
+        path: '', component: LogoAnimationComponent
     },
     {
         path: 'managecookies', component: ManageCookiesComponent
