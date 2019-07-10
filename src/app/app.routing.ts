@@ -34,7 +34,7 @@ const routes:Routes = [
         path: 'blog', component: BlogComponent
     },
     {
-        path: 'services', component: ServicesComponent
+        path: 'home', component: ServicesComponent
     },
     {
         path: 'services/blockchain-consulting', component: BlockchainConsultingComponent

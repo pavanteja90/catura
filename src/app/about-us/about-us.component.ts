@@ -32,7 +32,7 @@ export class AboutUsComponent implements OnInit {
             setTimeout(() => {
                 $(".loading-page").hide();
                 $(".team-section").show();                
-            }, 2000);
+            }, 1000);
         });
         this.googleAnalytics.emitEvent('PageView', 'Team');
     }

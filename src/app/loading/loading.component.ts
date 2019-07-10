@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
     selector: 'app-loading',
@@ -11,6 +12,7 @@ export class LoadingComponent implements OnInit {
     }
 
     ngOnInit() {
+        window.scrollTo(0,0);
     }
 
 }

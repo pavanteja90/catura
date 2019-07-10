@@ -29,7 +29,7 @@ export class PageNotFoundComponent implements OnInit {
     }
 
     navigateToHome() {
-        this.router.navigate(['/services']);
+        this.router.navigate(['/home']);
     }
 
 }

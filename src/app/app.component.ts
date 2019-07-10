@@ -118,7 +118,7 @@ export class AppComponent {
                         this.router.navigate(["/services/artificial-intelligence"]);
                         break;
                     default:
-                        this.router.navigate(["/"]);
+                        this.router.navigate(["/home"]);
                         break;
                 }
                 break;

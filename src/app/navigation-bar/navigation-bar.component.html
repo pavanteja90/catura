@@ -4,7 +4,7 @@
             <a class="navbar-brand" style="cursor: pointer; color: ivory" (click)="navigate(1)">
                 <!-- <img src="../assets/images/bootstrap.png" style="height: 1.5em; width: 1.5em;align-self: center" alt="Logo"> -->
                 <span class="sr-only">Catura</span>
-                <img src="../assets/images/catura.png" style="height: 1em; align-self: center" alt="Catura">
+                <img src="../../assets/images/logos/catura.png" style="height: 1em; align-self: center" alt="Catura">
             </a>
             <button class="navbar-toggler ml-auto margin-right-5" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -14,6 +14,10 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item normal-nav-item" router-url="/home">
+                        <a class="nav-link" style="cursor: pointer;" (click)="navigate(1)"><span
+                                class="sr-only">Home</span>Home</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -55,10 +59,10 @@
                                 <span class="sr-only">Artificial Intelligence</span></a>
                         </div>
                     </li>
-                    <li class="nav-item normal-nav-item" router-url="/blog">
+                    <!-- <li class="nav-item normal-nav-item" router-url="/blog">
                         <a class="nav-link" style="cursor: pointer;" (click)="navigate(2)"><span
                                 class="sr-only">Blog</span>Blog</a>
-                    </li>
+                    </li> -->
                     <!-- <li class="nav-item">
                         <a class="nav-link" style="cursor: pointer;" (click)="navigate(3)"><span
                                 class="sr-only">Careers</span>Careers</a>

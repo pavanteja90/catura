@@ -17,8 +17,12 @@ export class LogoAnimationComponent implements OnInit {
 
     navigate() {
         setTimeout(() => {
-            this.router.navigate(['/services']);
+            this.router.navigate(['/home']);
         }, 1000);
+    }
+
+    videoClicked() {
+        $("#_vid").get(0).play();
     }
 
     ngAfterViewChecked() {

@@ -44,7 +44,7 @@ export class ContactUsComponent implements OnInit {
             setTimeout(() => {
                 $(".loading-page").hide();
                 $(".contact-section").show();                
-            }, 2000);
+            }, 1000);
         });
         this.googleAnalytics.emitEvent('PageView', 'ContactUs');
         $(".numbersOnly").keydown(function (event: any) {

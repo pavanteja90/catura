@@ -48,10 +48,10 @@ export class AppFooterComponent implements OnInit {
                 this.router.navigate(["/team"]);
                 break;
             case 12:
-                this.router.navigate(["/services"]);
+                this.router.navigate(["/home"]);
                 break;
             default:
-                this.router.navigate(["/services"]);
+                this.router.navigate(["/home"]);
                 break;
         }
     }

@@ -197,6 +197,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.0);
     transition: all ease-in-out 350ms;
+    background: #141340;
 }
 
 .card-animate:hover {
@@ -277,4 +278,11 @@
     margin: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0;
+}
+
+.img-contain {
+    margin: 5%;
+    max-width: 300px;
+    max-height: 300px;
+    width: 90%;
 }
