@@ -46,3 +46,9 @@
 .uppercase {
     text-transform: uppercase;
 }
+
+@media screen and (max-width:991px) {
+    .sto-section {
+        margin-top: 0px;
+    }
+}

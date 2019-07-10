@@ -19,6 +19,7 @@
 .services-list a.clicked {
     font-weight: bold !important;
     background: -webkit-linear-gradient(red, orange);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -26,12 +27,14 @@
 .footer-second a.clicked {
     font-weight: bolder;
     background: -webkit-linear-gradient(red, orange);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .catura-mail:hover {
     background: -webkit-linear-gradient(red, orange);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -72,6 +75,7 @@
 
 .services-list>li>a:hover {
     background: -webkit-linear-gradient(red, orange);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateX(5px);
@@ -80,6 +84,7 @@
 
 .others-list a:hover {
     background: -webkit-linear-gradient(red, orange);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;

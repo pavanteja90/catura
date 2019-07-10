@@ -30,3 +30,9 @@
 .area { 
     background: linear-gradient(to bottom right, #267794, #f0fbfb); 
 }
+
+@media screen and (max-width:991px) {
+    .blog-section {
+        margin-top: 0px;
+    }
+}

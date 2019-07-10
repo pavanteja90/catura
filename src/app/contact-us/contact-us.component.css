@@ -69,3 +69,9 @@
 .contact-padding-left {
     padding-left: 12px;
 }
+
+@media screen and (max-width:991px) {
+    .contact-section {
+        margin-top: 0px;
+    }
+}
