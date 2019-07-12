@@ -13,6 +13,9 @@ export class LogoAnimationComponent implements OnInit {
     constructor(private router: Router) { }
 
     ngOnInit() {
+        $(document).ready( () => {
+            $("#_vid").get(0).play();
+        });
     }
 
     navigate() {

@@ -367,7 +367,7 @@
 }
 
 .gradient-text-3 {
-    background: -webkit-linear-gradient( #0c252e, #2183CC, #38D4D0);
+    background: -webkit-linear-gradient( #0c252e, #2183CC, #2183CC, #38D4D0 );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -375,4 +375,29 @@
 
 .no-text-decoration {
     text-decoration: none !important;
+}
+
+.nav-body {
+    padding: 2% !important;
+}
+
+.nav-card {
+    background: linear-gradient(to right, red, orange);
+    transform: translateX(0px);
+    transition: all ease-in-out 350ms;
+}
+
+.nav-icon {
+    width: 8%;
+}
+
+.nav-card:hover {
+    transform: translateX(10px);
+    transition: all ease-in-out 350ms;
+}
+
+@media screen and (min-width:768px) {
+    .nav-body {
+        padding: 2% !important
+    }
 }

@@ -87,7 +87,7 @@ export class AppComponent {
     navigate(navCode: Array<number>) {
         let id = navCode[0];
         let id2 = 0;
-        if(navCode.length > 1){
+        if (navCode.length > 1) {
             id2 = navCode[1];
         }
         switch (id) {
@@ -136,6 +136,12 @@ export class AppComponent {
                 break;
             case 6:
                 this.router.navigate(["/managecookies"]);
+                break;
+            case 7:
+                this.router.navigate(["/"]);
+                break;
+            default:
+                this.router.navigate(["/"]);
                 break;
         }
     }

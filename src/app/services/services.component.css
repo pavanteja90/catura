@@ -1,9 +1,12 @@
 .section-1 {
     animation-name: out;
     animation-duration: 1000ms;
-    background-image: url('../../assets/images/blockchain.jpeg');
+    background-image: url('../../assets/images/backgrounds/BackgroundCaturaTriangle.png');
     width: 100vw;
     height: 100vh;
+    background-color: #001c29;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     color: ivory;
     display: table;
@@ -15,7 +18,6 @@
     animation-duration: 1000ms;
     background-image: linear-gradient(to bottom right, #396B7F, #396B7F, #396B7F, #3c137c,#3e0c76);
     width: 100vw;
-    height: 100vh;
     display: table;
 }
 
@@ -34,7 +36,6 @@
     animation-duration: 1000ms;
     background-image: linear-gradient(to bottom left, #34298c, #0b6eb9, #45e3cd);
     width: 100vw;
-    height: 100vh;
     display: table;
 }
 
@@ -236,7 +237,7 @@
     background-color: #223841;
     overflow: hidden;
     width: 100%;
-    height: 25%;
+    height: 35%;
     transition: .4s ease;
     border-radius: 0px 0px 8px 8px;
 }
@@ -264,7 +265,7 @@
     transition-duration: 400ms;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1080px) {
     .overlay {
         height: 40%;
     }
@@ -278,6 +279,7 @@
     margin: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0;
+    background: #dfedf1;
 }
 
 .img-contain {
@@ -285,4 +287,18 @@
     max-width: 300px;
     max-height: 300px;
     width: 90%;
+}
+
+.card-body-padding {
+    padding-bottom: 5% !important;
+}
+
+.img-padding-bottom {
+    padding-bottom: 10% !important;
+}
+
+@media screen and (min-width: 691px) and (max-width: 892px) {
+    .overlay .text {
+        font-size: 0.66rem;
+    }
 }

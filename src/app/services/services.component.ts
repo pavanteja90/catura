@@ -32,7 +32,7 @@ export class ServicesComponent implements OnInit {
             setTimeout(() => {
                 $(".loading-page").hide();
                 $(".services-page").show();                
-            }, 1000);
+            }, 2000);
         });
         this.googleAnalytics.emitEvent('PageView', 'Services');
     }
